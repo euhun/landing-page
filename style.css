@@ -1,0 +1,235 @@
+/*overall*/
+body {
+    margin:0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border-radius:15px;
+    
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.046);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(1px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    padding-bottom:5px;
+}
+
+#glass {
+    background: rgba(255, 255, 255, 0.046);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom:5px;
+
+}
+
+/*header*/
+.header {
+
+    background-image: url("background.mp4");
+    background-size:cover;
+    padding:10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+/*from https://blog.hubspot.com/website/video-background-css*/
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+.header .glass{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    margin: 0 10px;
+}
+
+.header .glass .left {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:40px;
+    font-weight:900;
+}
+
+.left img{
+   width:auto;
+   height:50px;
+   object-fit: cover;
+   flex-grow:0;
+}
+
+#shark {
+    transform:scaleX(-1);
+}
+
+.header .glass .right {
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+/*subheader*/
+.subheader {
+    display:flex;
+    padding:30px 0px;
+    justify-content: center;
+    color:beige;
+    font-size:50px;
+}
+
+.subheader p{
+    margin-top:30px;
+}
+
+.subheader .subtext{
+    font-size:20px;
+}
+
+.subheader .glass{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0 10px;
+}
+
+.subheader .left {
+    padding-left:20px;
+    max-width: 600px;
+}
+
+button {
+    width:120px;
+    height:30px;
+    border-radius:15px;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: darkred;
+}
+
+.subheader .right {
+    padding-right:20px;
+}
+
+/*body*/
+.body {
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    margin:0px;
+    align-items:center;
+    gap:30px;
+    background-image:url('images/table3.jpg');
+    background-size:cover;
+    background-position:top;
+    color:white;
+    font-size:36px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.body .bottom {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin:0px 10px;
+    gap:20px;
+}
+
+.body img {
+    width:250px;
+    height:250px;
+    object-fit: cover;
+}
+
+.body .right {
+    display:flex;
+    gap:20px;
+}
+
+.body .item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*main*/
+.main {
+    background-image:url('images/scuba.png');
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:top;
+    padding:100px;
+    display:flex;
+    justify-content: center;
+    color:white;
+    font-size:20px;
+    font-family:cursive;
+    font-weight:bold;
+    
+}
+
+.main .quotes {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*footer*/
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:150px 30px;
+    color:beige;
+    background-image: url(images/nautlius.jpeg);
+    background-size:cover;
+    background-position:center;
+}
+
+.footer .box{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    padding:30px;
+    font-size:20px;
+}
+
+.footer .subtext {
+    font-size:15px;
+}
+
+#footer {
+    background-color:darkslategray;
+    display:flex;
+    color:beige;
+    justify-content: center;
+    align-items: center;
+}
+
